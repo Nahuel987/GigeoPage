@@ -130,7 +130,6 @@
     }
 
     .contenedor-videos div {
-
         background-color: violet;
         text-align: center;
         padding: 20px 0;
@@ -142,24 +141,21 @@
     .contendor-nav .logo {
         text-align: center;
     }
-
     .contendor-nav .iconos {
         display: none;
-
     }
 
     /*Perfil*/
-
-    /*pendiente centar yumi*/
-
-
+    .contenedor-img {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
     .perfil .txtPerfil {
         background-color: violet;
         text-align: left;
         grid-column-start: 1;
         grid-column-end: 5;
     }
-
     .perfil .contenedor-botones {
         display: none;
     }
@@ -169,7 +165,6 @@
         display: none;
         grid-column-start: 1;
         grid-column-end: 5;
-
     }
 
     .item {
@@ -183,5 +178,4 @@
         display: grid;
         place-items: center;
     }
-
 }
