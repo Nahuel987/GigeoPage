@@ -1,4 +1,4 @@
-/**Layout*/
+/**Layout Desktop*/
 .contenedor {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -115,4 +115,73 @@
 
 .item .itemCuerpo {
     text-align: left;
+}
+
+/*Layout Mobile*/
+
+@media screen and (max-width: 576px) {
+
+    .header,
+    .banner,
+    .perfil,
+    .contenedor-videos {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .contenedor-videos div {
+
+        background-color: violet;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+
+    /*Header*/
+    .contendor-nav .logo {
+        text-align: center;
+    }
+
+    .contendor-nav .iconos {
+        display: none;
+
+    }
+
+    /*Perfil*/
+
+    /*pendiente centar yumi*/
+
+
+    .perfil .txtPerfil {
+        background-color: violet;
+        text-align: left;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .perfil .contenedor-botones {
+        display: none;
+    }
+
+    /*Videos*/
+    .item0 {
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 5;
+
+    }
+
+    .item {
+        text-align: center;
+        width: 80%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .contenedor-videos {
+        display: grid;
+        place-items: center;
+    }
+
 }
